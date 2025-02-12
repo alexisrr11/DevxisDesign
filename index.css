@@ -93,11 +93,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     width: 100%;
-    padding: 20px 350px;
+    padding: 20px 300px;
 }
 .cards section {
     border: 1px solid black;
-    padding: 20px 60px;
+    padding: 20px 50px;
     border-radius: 20px 20px 0 100px;
     background-color: rgba(38, 162, 168, 0.562);
 }
@@ -176,9 +176,6 @@ body {
         flex-direction: column;
         gap: 15px;
         padding: 50px 0;
-    }
-    .footer-txt p {
-        bottom: -240px;
     }
     .bx-chat {
         position: fixed;
