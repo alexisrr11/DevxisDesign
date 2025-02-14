@@ -204,6 +204,7 @@ body {
     }
     .elementos {
         flex-direction: column;
+        gap: 20px;
     }
     .cards {
         grid-template-columns: 1fr 1fr;
