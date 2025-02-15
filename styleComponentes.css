@@ -26,9 +26,15 @@ body {
     padding: 45px;
     color: #dedede;
 }
-.header-txt h1 {
+.header-txt a {
+    list-style-type: none;
+    text-decoration: none;
+}
+.header-txt a h1 {
     font-size: 35px;
     padding-bottom: 20px;
+    color: #dedede;
+    
 }
 .main {
     background-color: rgba(38, 162, 168, 0.219);
@@ -204,7 +210,6 @@ body {
     }
     .elementos {
         flex-direction: column;
-        gap: 20px;
     }
     .cards {
         grid-template-columns: 1fr 1fr;
