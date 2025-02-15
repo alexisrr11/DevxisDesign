@@ -1,9 +1,16 @@
 const menu = document.querySelector(".none");
 const boton = document.querySelector(".bx-menu-alt-right");
 
-boton.addEventListener("click", () => {
+boton.addEventListener("click", (event) => {
     menu.classList.toggle("none");
-})
+    event.stopPropagation(); 
+});
+
+document.addEventListener("click", (event) => {
+    if (!menu.contains(event.target) && !boton.contains(event.target)) {
+        menu.classList.add("none");
+    }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const elementos = document.querySelectorAll(".elemento");
@@ -12,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         el.style.animationDelay = `${index * 0.5}s`; 
     });
 });
+
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
@@ -24,4 +32,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
   });
-
