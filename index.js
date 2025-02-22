@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const elemento = document.querySelector(".animacion");
     const textos = [
+        "Servicios de páginas webs",
         "Queremos facilitar tu trabajo con nuestro trabajo",
         "Consulte ante cualquier duda, Estamos esperando su mensaje"
     ];
