@@ -48,9 +48,9 @@ body {
 }
 .elementos {
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 120px;
 }
 @keyframes flotar {
@@ -70,6 +70,7 @@ body {
     border-radius: 30px;
     animation: flotar 2s ease-in-out infinite;
     text-align: center;
+    width: 250px;
 }
 .elemento a {
     text-decoration: none;
@@ -209,6 +210,8 @@ body {
         font-size: 1.1rem;
     }
     .elementos {
+        display: flex;
+        justify-self: center;
         flex-direction: column;
         gap: 20px;
     }
